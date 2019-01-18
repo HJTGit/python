@@ -8,3 +8,24 @@ class Student():
 
 # 定义一个对象
 hjt = Student()
+
+# 再定义一个类，描述听Python的学生
+class PythonStudent():
+    # 用None给不确定的值赋值
+    name = None
+    age = 18
+    course = "Python"
+
+    # 注意缩进层级
+    # 默认有一个self参数
+    def doHomeWork(self):
+        print("做作业")
+        # 推荐在函数末尾使用return语句
+        return None
+
+# 实例化
+hjt = PythonStudent()
+print(hjt.name)
+print(hjt.age)
+# 注意成员函数的调用没有传入参数
+hjt.doHomeWork()
