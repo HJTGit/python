@@ -9,7 +9,7 @@ import time
 #声明谷歌等浏览器
 browser=webdriver.Chrome()
 try:
-    browser.get("https://www.baidu.com")
+    browser.get("https://www.test.com")
     input=browser.find_element_by_id("kw")
     input.send_keys("Python")
     input.send_keys(Keys.ENTER)
